@@ -23,6 +23,25 @@ This repo is a hybrid of the dioxus "Jumpstart" and "Workspace" templates,
 with fullstack enabled. It contains two crates, one for the server and one
 for the client app. The app crate supports all web/desktop/mobile platforms. 
 
+```
+├── app
+│   ├── Cargo.toml
+│   ├── assets
+│   │   └── tailwind.css
+│   ├── input.css
+│   └── src
+│       ├── components
+│       ├── views
+│       └── main.rs
+├── server
+│   ├── Cargo.toml
+│   └── src
+│       └── lib.rs
+├── Cargo.toml
+├── Dioxus.toml
+└── package.json
+```
+
 ## Compiling Tailwind CSS
 
 Install `@tailwindcss/cli`, if necessary:
