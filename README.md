@@ -1,27 +1,31 @@
 # dioxus-tailwind-v4
 
-Tailwind v4 introduced two major changes, such that most online documentation,
-Q/As, and the dioxus tailwind examples are no longer correct:
+Tailwind v4 introduced changes which make most online documentation,
+Q/As, and the official dioxus tailwind examples no longer correct.
+These changes include:
 
-* [CSS First Configuration](https://tailwindcss.com/blog/tailwindcss-v4#css-first-configuration) -
-  the `tailwind.config.js` file is no longer used or necessary; notably the
+* [CSS First Configuration](https://tailwindcss.com/blog/tailwindcss-v4#css-first-configuration).
+  The `tailwind.config.js` file is no longer used or necessary. Notably the
   `content` config variable isn't needed due to
   [automatic content detection](https://tailwindcss.com/blog/tailwindcss-v4#automatic-content-detection).
-* CLI split from [`tailwindcss`](https://www.npmjs.com/package/tailwindcss)
+* The CLI has been split from [`tailwindcss`](https://www.npmjs.com/package/tailwindcss)
   to a separate [`@tailwindcss/cli`](https://www.npmjs.com/package/@tailwindcss/cli)
-  npm package. Some commands, such as `npx tailwindcss init` are no longer
-  available.
+  npm package. The `npx tailwindcss init` command is no longer available (or
+  necessary, see above).
   
 This repo attempts to provide a working example of the dioxus starter app
-styled using tailwind. CSS from the starter app was translated to tailwind
-classes manually, so it may not look exactly the same. If you notice any
-major differences please send a PR.
+styled using tailwind v4.
+
+CSS from the starter app was translated to tailwind classes manually; it may not
+look exactly the same. If you notice any significant differences feel free to
+send a PR.
 
 ### Organization
 
-This repo is a hybrid of the dioxus "Jumpstart" and "Workspace" templates,
-with fullstack enabled. It contains two crates, one for the server and one
-for the client app. The app crate supports all web/desktop/mobile platforms. 
+The organization of this repo is a hybrid of the dioxus "Jumpstart" and
+"Workspace" templates, with fullstack enabled. It contains two crates, one for
+the server and one for the client app. The app crate supports all
+web/desktop/mobile platforms. 
 
 ```
 ├── app
