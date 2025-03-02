@@ -1,12 +1,9 @@
 [workspace]
 resolver = "3"
-members = [
-    "app",
-    "server",
-]
+members = ["app", "server", "shared"]
 
 [workspace.dependencies]
-dioxus = { version = "0.6.0", features = ["router", "fullstack"]}
+dioxus = { version = "0.6.3", features = ["router", "fullstack"] }
 
 [profile]
 
